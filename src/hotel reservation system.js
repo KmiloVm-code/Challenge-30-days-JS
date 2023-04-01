@@ -98,25 +98,22 @@ hotel.addReservation({
   roomNumber: 9,
 });
 
+hotel.addReservation({
+  id: 3,
+  name: "Pepe Doe",
+  checkIn: "01/01",
+  checkOut: "02/01",
+  roomNumber: 7,
+});
+
 console.log(hotel.getReservations());
 
-//console.log(hotel.removeReservation(5));
+console.log(hotel.removeReservation(2));
 
-//console.log("Busqueda", hotel.searchReservation(5));
+console.log("Busqueda", hotel.searchReservation(1));
 
 console.log(hotel.getAvailableRooms("01/01", "05/01"));
 
 console.log(hotel.getReservations());
 
 console.log(hotel.getSortReservations());
-
-// Output:
-// [
-//   {
-//     id: 1,
-//     name: "John Doe",
-//     checkIn: "01/01",
-//     checkOut: "02/01",
-//     roomNumber: 1,
-//   }
-// ]
